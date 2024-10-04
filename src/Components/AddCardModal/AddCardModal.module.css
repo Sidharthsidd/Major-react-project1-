@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #000; 
+}
+.card {
+  width: auto;
+  max-width: 600px;
+  background-color: #333; 
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff; 
+}
+
+.input {
+  color: #fff; 
+  font: inherit;
+  margin-top: 8px;
+  background-color: #444; 
+   outline: none;
+  border: 1px solid #888; 
+    font-size: 1.2rem;
+  font-weight: 300;
+  padding: 8px;
+  width: 100%;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.saveButton {
+  margin-right: 40px;
+  width: 100%;
+  max-width: 150px;
+  align-self: flex-end;
+  background: #ff9505; 
+  border: none;
+  padding: 10px;
+  color: white; 
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.saveButton:disabled {
+  background: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .saveButton {
+    width: 100%;
+    max-width: 100%;
+  }
+}
